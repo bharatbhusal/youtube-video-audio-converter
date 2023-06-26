@@ -2,8 +2,8 @@
   "name": "youtube-video-converter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bharatbhusal.github.io/youtube-video-converter",
-  "description": "A youtube video converter for mp3 and mp4 using node-ytdl and ffmpeg",
+  "homepage": "https://bharatbhusal.github.io/youtube-video-audio-converter",
+  "description": "A youtube video converter for mp3",
   "author": "BharatBhusal",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bharatbhusal/youtube-video-converter.git"
+    "url": "git+https://github.com/bharatbhusal/youtube-video-audio-converter"
   },
   "eslintConfig": {
     "extends": [
