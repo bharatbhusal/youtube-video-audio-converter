@@ -1,19 +1,39 @@
 import React, { useState } from 'react'
 import "./form.css"
+import serverEndpoint from "../../server/downloader";
 
-const Form = ({ getInfo }) => {
+const Form = () => {
 
   const [inputUrl, setInputUrl] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getInfo(inputUrl);
     setInputUrl('');
+    // downloadAudio(inputUrl);
   };
 
   const handleChange = (e) => {
     setInputUrl(e.target.value);
   };
+
+  // const axios = require('axios');
+  // const fs = require('fs');
+
+  // const downloadAudio = async (url) => {
+  //   try {
+  //     const response = await axios({
+  //       url,
+  //       method: 'GET',
+  //       responseType: 'stream',
+  //     });
+
+  //     response.data.pipe(fs.createWriteStream('audio.mp3'));
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
+
+
 
   return (
     <>
@@ -26,7 +46,7 @@ const Form = ({ getInfo }) => {
           onChange={handleChange}
           required
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Download</button>
       </form>
     </>
   )

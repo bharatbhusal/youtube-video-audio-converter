@@ -15,4 +15,16 @@
     border-radius: 10px;
     -webkit-perspective: 300px;
     perspective: 300px;
+    gap: 1rem;
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 350px;
+    }
+
+    .input-form {
+        flex-direction: column;
+    }
 }

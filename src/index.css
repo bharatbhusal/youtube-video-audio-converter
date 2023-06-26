@@ -10,6 +10,7 @@
   text-decoration: none;
   overflow: hidden;
   transition: all 400ms ease;
+  font-family: "Poppins";
 }
 
 :root {
@@ -28,7 +29,6 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
